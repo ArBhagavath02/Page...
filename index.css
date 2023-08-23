@@ -11,20 +11,17 @@ body {
     /* font-family: 'Josefin Sans', sans-serif; */
     font-family: 'Poppins', sans-serif;
     max-height: 100vh;
-    background: #080808;
-    color: #fff;
+    
 }
 /*nav */
 header {
     padding: 1.7rem 1rem;
-    background-color: #fff;
     display: flex;
     justify-content: space-between;
     max-width: 80%;
     margin: auto;
     align-items: center;
-    background: #080808;
-    color: #fff;
+    
 }
 
 .logo {
@@ -238,6 +235,13 @@ ul{
     align-items: center;
     text-align: center;
 }
+i{
+    font-size: 15px;
+    cursor: pointer;
+    
+   
+    transform: translate(-50%, -50%);
+}
 
 @media only screen and (max-width:480px) {
     .menu {
@@ -256,13 +260,19 @@ ul{
     nav {
         position: absolute;
         display: grid;
-        top: 75px
-        ;
+        top: 75px;
         width: calc(100% - 40px);
         text-align: center;
         background-color: #fff;
         left: -100%;
     }
+    i{ position: absolute;
+        display: grid;
+        top: 75px;
+        width: calc(100% - 40px);
+        text-align: center;
+        background-color: #fff;
+        left: -100%;}
 
     #click:checked~nav {
         left: 0%;

@@ -1,36 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 *
 {
+    
     margin: 0;
     padding: 0;
     
+
 }
-body{
-    font-family: 'Poppins',sans-serif;
+body {
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
     max-height: 100vh;
-    background: #080808;
-    color: #fff;
+    
 }
-header{
+/*nav */
+header {
     padding: 1.7rem 1rem;
-    background: #080808;
-    color: #fff;
+
     display: flex;
     justify-content: space-between;
     max-width: 80%;
     margin: auto;
     align-items: center;
-
+    
 }
-.logo{
+
+.logo {
     font-size: 1.3rem;
     font-weight: 800;
 }
-.logo a{
 
-    color: #244d61;
+.logo a {
+    color: #244D61;
     text-decoration: none;
 }
- 
+
 nav a {
     color: #244D61;
     text-decoration: none;
@@ -56,6 +60,9 @@ nav a:hover {
 .menu {
     display: none;
 }
+
+/* Nav */
+
 section {
     margin: 2rem 8.5rem;
 }
@@ -67,49 +74,123 @@ section {
     align-items: center;
     margin: 5rem auto;
 }
-#services {
-    padding: 30px 0;
+
+.main h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-top: 1.7rem;
 }
 
-.services-list div {
-    background: #262626;
-    padding: 40px;
-    font-size: 15px;
-    line-height: 30 px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+.social a {
+    color: #244D61;
+    font-size: 1rem;
+    border: 1.6px solid #244D61;
+    border-radius: 50%;
+    padding: .35rem;
+    text-align: center;
+    width: 26px;
 }
 
-.services-list div i {
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.services-list div h2 {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.services-list div a {
-    text-decoration: none;
+.social a:hover {
     color: #fff;
-    font-size: 14px;
-    margin-top: 20px;
-    display: inline-block;
+    background-color: #244D61;
+    transition: all .3s ease-in-out;
 }
 
-.services-list div:hover {
-    background: #244D61;
-    transform: translateY(-10px);
+.main h1 span:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.images {
+    background-image: url("https://www.bing.com/ck/a?!&&p=ce7730e4a66bd59dJmltdHM9MTY4MzQxNzYwMCZpZ3VpZD0zY2M2MTU2ZS0yOTFhLTY3YjctMzM2OC0wN2NiMjhhODY2YjkmaW5zaWQ9NTUxOA&ptn=3&hsh=3&fclid=3cc6156e-291a-67b7-3368-07cb28a866b9&u=a1L2ltYWdlcy9zZWFyY2g_cT1odW1hbiBpbWFnZSBwbmcmRk9STT1JUUZSQkEmaWQ9Q0FGOURGOTkyRjA1MEI3QTNEOUNCMUY4RENFNEU3RkY5QjEzODZBNg&ntb=1");
+    background-repeat: no-repeat;
+    background-position: 0 -75px;
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+    align-items: center;
+    text-align: center;
+}
+i{
+    font-size: 15px;
+    cursor: pointer;
+    
+   
+    transform: translate(-50%, -50%);
 }
 #about {
     padding: 80px 0px;
@@ -387,7 +468,13 @@ form textarea {
 nav .fas {
     display: none;
 }
-
+i{
+    font-size: 15px;
+    cursor: pointer;
+    
+   
+    transform: translate(-50%, -50%);
+}
 @media only screen and (max-width:480px) {
     .menu {
         display: block;

@@ -20,3 +20,4 @@ var tabLinks = document.getElementsByClassName('tab-links');
         document.querySelector('.fas.fa-times').addEventListener('click', function () {
             document.querySelector('nav ul').classList.remove('show');
         });
+        

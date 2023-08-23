@@ -2,6 +2,8 @@
 {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 body{
     font-family: 'Poppins',sans-serif;
@@ -9,7 +11,6 @@ body{
 }
 header{
     padding: 1.7rem 1rem;
-    background-color: #fff;
     display: flex;
     justify-content: space-between;
     max-width: 80%;
@@ -99,19 +100,6 @@ section {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap');
-
-
-*{
-
-    padding: 0;
-
-    margin: 0;
-
-    box-sizing: border-box;
-
-    font-family: poppins;
-
-}
 
 .skills_section{
 
@@ -223,11 +211,12 @@ section {
 
 }
 
+
 .skill_bar .bar .html{
 
     width: 90%;
 
-    animation: html 2s;
+    animation: html 1s;
 
 }
 
@@ -271,7 +260,7 @@ section {
 
     width: 80%;
 
-    animation: sass 2s;
+    animation: sass 3s;
 
 }
 
@@ -293,7 +282,7 @@ section {
 
     width: 80%;
 
-    animation: css 2s;
+    animation: css 4s;
 
 }
 
@@ -315,7 +304,7 @@ section {
 
     width: 75%;
 
-    animation: react 2s;
+    animation: react 5s;
 
 }
 
@@ -337,7 +326,7 @@ section {
 
     width: 70%;
 
-    animation: node 2s;
+    animation: node 6s;
 
 }
 
@@ -359,7 +348,7 @@ section {
 
     width: 65%;
 
-    animation: express 2s;
+    animation: express 7s;
 
 }
 
@@ -381,7 +370,7 @@ section {
 
     width: 60%;
 
-    animation: mongo 2s;
+    animation: mongo 8s;
 
 }
 

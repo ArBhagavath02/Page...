@@ -4,10 +4,8 @@
     padding: 0;
 }
 body{
-    font-family: 'Popping',sans-serif;
+    font-family: 'Poppins',sans-serif;
     max-height: 100vh;
-    background-color: black; 
-    color: white;  
 }
 header{
     padding: 1.7rem 1rem;
@@ -17,90 +15,172 @@ header{
     margin: auto;
     align-items: center;
 }
+h1{
+    align-items: start;
+    text-align: center;
+}
+p{
+    margin: 5%;
+    padding: -5%;
+}
 .logo{
     font-size: 1.3rem;
     font-weight: 800;
 }
 .logo a{
+
     color: #244d61;
     text-decoration: none;
 }
+ 
+nav a {
+    color: #244D61;
+    text-decoration: none;
+    font-size: .97rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    padding: 1rem;
+    padding: 0.4rem 1rem;
+}
 nav a.active,
-nav a:hover{
-    background-color: #244d61;
+nav a:hover {
+    background-color: #244D61;
     color: #fff;
     border-radius: 1rem;
     transition: all.3s ease-in-out;
 }
-#click{
+
+#click {
     display: none;
 }
-.main{
+
+.menu {
+    display: none;
+}
+section {
+    margin: 2rem 8.5rem;
+}
+
+.main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 5rem auto;
 }
-.section{
-    margin: 2rem 8.5rem;
+/*-----nave bar */
+.about-us{
+    padding: 80px 0px;
 }
-.content{
+.containar{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.row{
     display: flex;
-    min-height: 110vh;   
+    flex-wrap: wrap;
 }
-.content section{
-    margin-top: 8vh;
-    margin-left: 20vh;
+.flex{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px;
 }
-.content-form{
-    margin-top: 7rem;
-
-}
-.section i{
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255,255,255,0.8);
-    color: black;
+.about-us h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #333;
     text-align: center;
 }
-.form{
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 50%;
-    justify-content: center;
-    align-items: center;
-    min-height: 110vh;
-}
+.about-us h3{
 
-.form .contact-form input{
-    width: 30rem;
-    background-color: transparent;
-    border: 0px;
-    border: transparent;
-    margin: 20px;
-    padding: 10px;
+    font-size: 22px;
+    color: #888;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about-us p{
     font-size: 18px;
-    border-bottom: 2px solid #fff;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
 }
-.form .contact-form input ~ span{
-    position: absolute;
-    left: 20px;
-    transition: 0.9s ease-in-out;
-    margin-top: 10px;
+.about-us img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: -50% 100%;
 }
-.form .contact-form input:focus ~span{
-    transform: translateY(-20px);
-    pointer-events: none;
+.social-links{
+    margin-bottom: 20px;
 }
-.form .contact-form textarea{
-    width: 30rem;
-    border: 0px;
-    background-color: transparent;
-    margin: 20px;
-    font-size: 17px;
-    border-bottom: 2px solid white;
+.social-links a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10%;
+    color: #fff;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
+}
+.social-links a:hover{
+    transform:translateY(-3px);
+}
+.btn{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    font-style: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #333;
+    transition: all 0.4s ease;
+}
+i{
+    font-size: 15px;
+    cursor: pointer;
+    
+   
+    transform: translate(-50%, -50%);
+}
+@media only screen and (max-width:480px) {
+    .menu {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #244D61;
+    }
+
+    header {
+        padding: 0.7rem 1rem;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    nav {
+        position: absolute;
+        display: grid;
+        top: 75px
+        ;
+        width: calc(100% - 40px);
+        text-align: center;
+        background-color: #fff;
+        left: -100%;
+    }
+
+    #click:checked~nav {
+        left: 0%;
+        transition: all 0.3s ease;
+    }
+
+    section {
+        margin: 1rem 1.5rem;
+    }
+
 }
